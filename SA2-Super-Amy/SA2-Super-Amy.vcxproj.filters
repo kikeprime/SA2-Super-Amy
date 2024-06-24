@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Abilities">
+      <UniqueIdentifier>{7fffe95a-3d37-4122-9e43-262432499aa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Super Sonic">
+      <UniqueIdentifier>{7dd5e1ea-a6f9-4cb2-95fc-f1e0bcee8848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Super Shadow">
+      <UniqueIdentifier>{209833a0-1e8f-4ec2-a590-238b01317d18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Super Metal Sonic">
+      <UniqueIdentifier>{04f19cf2-37fa-409f-a811-2d6250c638f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Super Knuckles">
+      <UniqueIdentifier>{1da58770-8f2e-4318-b649-0aab9f3ece8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Super Chaos">
+      <UniqueIdentifier>{1484b243-2e3c-4104-bc3e-eaf2d2ecf5e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Super Amy">
+      <UniqueIdentifier>{cf45add9-c088-4e27-9a13-26137548d936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Super Tikal">
+      <UniqueIdentifier>{df862fbf-4e02-4334-8027-ff5caf596d04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Super Rouge">
+      <UniqueIdentifier>{704f6586-bb68-4227-89a0-0a282a08f463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Super Eggman">
+      <UniqueIdentifier>{81f83519-8f84-4124-9cd4-80dd99abb1ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Super Tails">
+      <UniqueIdentifier>{07939611-213b-43bd-991f-241441598227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Super Chao">
+      <UniqueIdentifier>{e3ccaf64-5c2e-4ef7-a102-dc3c4e79ad67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FinalHazard">
+      <UniqueIdentifier>{6224853b-c0d1-41bb-87eb-9aa2a799cb1a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SA2-util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="super-sonic.cpp">
+      <Filter>Source Files\Super Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="animation.cpp">
+      <Filter>Source Files\Super Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="aura.cpp">
+      <Filter>Source Files\Super Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="audio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="physics.cpp">
+      <Filter>Source Files\Super Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="jiggle.cpp">
+      <Filter>Source Files\Super Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="afterimage.cpp">
+      <Filter>Source Files\Super Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="fly.cpp">
+      <Filter>Source Files\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="chaos-control.cpp">
+      <Filter>Source Files\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="super-shadow.cpp">
+      <Filter>Source Files\Super Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="animation-ssh.cpp">
+      <Filter>Source Files\Super Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="physics-ssh.cpp">
+      <Filter>Source Files\Super Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="water.cpp">
+      <Filter>Source Files\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="animation-sa.cpp">
+      <Filter>Source Files\Super Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="super-amy.cpp">
+      <Filter>Source Files\Super Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="animation-sms.cpp">
+      <Filter>Source Files\Super Metal Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="super-metal.cpp">
+      <Filter>Source Files\Super Metal Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="super-chaos.cpp">
+      <Filter>Source Files\Super Chaos</Filter>
+    </ClCompile>
+    <ClCompile Include="super-knux.cpp">
+      <Filter>Source Files\Super Knuckles</Filter>
+    </ClCompile>
+    <ClCompile Include="super-tikal.cpp">
+      <Filter>Source Files\Super Tikal</Filter>
+    </ClCompile>
+    <ClCompile Include="super-rouge.cpp">
+      <Filter>Source Files\Super Rouge</Filter>
+    </ClCompile>
+    <ClCompile Include="upgrades-Metal.cpp">
+      <Filter>Source Files\Super Metal Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="upgrades-SAmy.cpp">
+      <Filter>Source Files\Super Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="super-mecheggman.cpp">
+      <Filter>Source Files\Super Eggman</Filter>
+    </ClCompile>
+    <ClCompile Include="upgrades.cpp">
+      <Filter>Source Files\Super Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="upgrades-SSH.cpp">
+      <Filter>Source Files\Super Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="super-mechtails.cpp">
+      <Filter>Source Files\Super Tails</Filter>
+    </ClCompile>
+    <ClCompile Include="super-chaow.cpp">
+      <Filter>Source Files\Super Chao</Filter>
+    </ClCompile>
+    <ClCompile Include="super-dchaow.cpp">
+      <Filter>Source Files\Super Chao</Filter>
+    </ClCompile>
+    <ClCompile Include="FinalHazard.cpp">
+      <Filter>Source Files\FinalHazard</Filter>
+    </ClCompile>
+    <ClCompile Include="super-tails.cpp">
+      <Filter>Source Files\Super Tails</Filter>
+    </ClCompile>
+    <ClCompile Include="super-eggman.cpp">
+      <Filter>Source Files\Super Eggman</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
