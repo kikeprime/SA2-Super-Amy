@@ -21,6 +21,19 @@ bool AllowSuperAttacks = true;
 bool LastStory = false;
 bool isJiggle = false;
 
+bool AllowSuperAmy = true;
+bool AllowSuperMetalSonic = true;
+bool AllowSuperTails = true;
+bool AllowSuperEggman = true;
+bool AllowSuperKnux = true;
+bool AllowSuperRouge = true;
+bool AllowSuperTikal = true;
+bool AllowSuperChaos = true;
+bool AllowSuperMechTails = true;
+bool AllowSuperMechEggman = true;
+bool AllowSuperChaoWalker = true;
+bool AllowSuperDarkChaoWalker = true;
+
 bool AlwaysSuperAmy = false;
 bool AlwaysSuperMetalSonic = false;
 bool AlwaysSuperTails = false;
@@ -118,6 +131,15 @@ bool isLastStoryBeaten()
 void ReadConfig(std::string path)
 {
 	const IniFile* config = new IniFile(std::string(path) + "\\config.ini");
+
+	AllowSuperAmy = config->getBool("Enabler", "AllowSuperAmy", true);
+	AllowSuperMetalSonic = config->getBool("Enabler", "AllowSuperMetalSonic", true);
+	AllowSuperTails = config->getBool("Enabler", "AllowSuperTails", true);
+	AllowSuperEggman = config->getBool("Enabler", "AllowSuperEggman", true);
+	AllowSuperKnux = config->getBool("Enabler", "AllowSuperKnux", true);
+	AllowSuperRouge = config->getBool("Enabler", "AllowSuperRouge", true);
+	AllowSuperTikal = config->getBool("Enabler", "AllowSuperTikal", true);
+	AllowSuperChaos = config->getBool("Enabler", "AllowSuperChaos", true);
 
 	RemoveLimitations = config->getBool("Gameplay", "RemoveLimitations", false);
 	AlwaysSuperSonic = config->getBool("Gameplay", "AlwaysSuperSonic", false);

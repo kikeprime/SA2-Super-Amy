@@ -3,7 +3,7 @@
 #include "ss.h"
 
 HelperFunctions HelperFunctionsGlobal;
-const char* error = "[SA2 Super Sonic]: WARNING: Your version of the Mod Loader is old, the mod won't work properly.\nPlease update your Mod Loader for the best experience.";
+const char* error = "[SA2 Super Amy]: WARNING: Your version of the Mod Loader is old, the mod won't work properly.\nPlease update your Mod Loader for the best experience.";
 time_t t;
 HMODULE SA2SS = NULL;
 HMODULE SA2Anim = NULL;
@@ -42,7 +42,7 @@ extern "C" {
 
 		if (HelperFunctionsGlobal.Version < 8) {
 			PrintDebug(error);
-			MessageBoxA(MainWindowHandle, error, "SA2 Super Sonic", MB_ICONWARNING);
+			MessageBoxA(MainWindowHandle, error, "SA2 Super Amy", MB_ICONWARNING);
 		}
 
 		SA2SS = GetModuleHandle(L"SA2-Super-Sonic");
@@ -78,18 +78,30 @@ extern "C" {
 		{
 			init_SuperSonic();
 //			init_SuperShadow();
-			init_SuperAmy();
-			init_SuperMetalSonic();
-			init_SuperTails();
-			init_SuperEggman();
-			init_SuperKnuckles();
-			init_SuperRouge();
-			init_SuperTikal();
-			init_SuperChaos();
-			init_SuperMechTails();
-			init_SuperMechEggman();
-			init_SuperChaoWalker();
-			init_SuperDarkChaoWalker();
+			if (AllowSuperAmy)
+				init_SuperAmy();
+			if (AllowSuperMetalSonic)
+				init_SuperMetalSonic();
+			if (AllowSuperTails)
+				init_SuperTails();
+			if (AllowSuperEggman)
+				init_SuperEggman();
+			if (AllowSuperKnux)
+				init_SuperKnuckles();
+			if (AllowSuperRouge)
+				init_SuperRouge();
+			if (AllowSuperTikal)
+				init_SuperTikal();
+			if (AllowSuperChaos)
+				init_SuperChaos();
+			if (AllowSuperMechTails)
+				init_SuperMechTails();
+			if (AllowSuperMechEggman)
+				init_SuperMechEggman();
+			if (AllowSuperChaoWalker)
+				init_SuperChaoWalker();
+			if (AllowSuperDarkChaoWalker)
+				init_SuperDarkChaoWalker();
 
 			init_MusicHack();
 			init_PhysicsHack();
