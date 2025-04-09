@@ -56,14 +56,22 @@ extern "C" {
 
 		modpath = std::string(path);
 		auto GammaMod = helperFunctions.Mods->find_by_name("E-102 Gamma");
-		auto DCChars = helperFunctions.Mods->find_by_dll(DCCharsDLL);
-		DCCharsPath = DCChars->Folder;
-		auto DisableUpgradeModels = helperFunctions.Mods->find_by_dll(DisableUpgradeModelsDLL);
-		DisableUpgradeModelsPath = DisableUpgradeModels->Folder;
-		auto BetterMiles = helperFunctions.Mods->find_by_dll(BetterMilesDLL);
-		BetterMilesPath = BetterMiles->Folder;
-		auto AmyNewTricks = helperFunctions.Mods->find_by_dll(AmyNewTricksDLL);
-		AmyNewTricksPath = AmyNewTricks->Folder;
+		if (DCCharsDLL) {
+			auto DCChars = helperFunctions.Mods->find_by_dll(DCCharsDLL);
+			DCCharsPath = DCChars->Folder;
+		}
+		if (DisableUpgradeModelsDLL) {
+			auto DisableUpgradeModels = helperFunctions.Mods->find_by_dll(DisableUpgradeModelsDLL);
+			DisableUpgradeModelsPath = DisableUpgradeModels->Folder;
+		}
+		if (BetterMilesDLL) {
+			auto BetterMiles = helperFunctions.Mods->find_by_dll(BetterMilesDLL);
+			BetterMilesPath = BetterMiles->Folder;
+		}
+		if (AmyNewTricksDLL) {
+			auto AmyNewTricks = helperFunctions.Mods->find_by_dll(AmyNewTricksDLL);
+			AmyNewTricksPath = AmyNewTricks->Folder;
+		}
 		
 		//Gamma mod
 		if (GammaMod)
