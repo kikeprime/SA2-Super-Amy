@@ -132,11 +132,11 @@ void DisplayHammer()
 		float v55 = 0;
 		switch (sco2->base.AnimInfo.Animations[curAnim].AnimNum)
 		{
-			//		case 259:
+//		case 259:
 		case 206:
 		case 0xE4:
 		case 0xE8:
-			memcpy(CURRENT_MATRIX, &sonic_RightHandMatrix, 0x30u);
+			memcpy(CURRENT_MATRIX, &Amy_RightHandMatrix, 0x30u);
 			v49 = sco2->base.AnimInfo.nframe;
 			if (v49 >= 1.0)
 			{
@@ -169,7 +169,7 @@ void DisplayHammer()
 		case 0xF2:
 		case 0xF5:
 		case 259:
-			memcpy(CURRENT_MATRIX, &sonic_RightHandMatrix, 0x30u);
+			memcpy(CURRENT_MATRIX, &Amy_RightHandMatrix, 0x30u);
 		LABEL_96:
 			DrawObject(hammer);
 			break;
@@ -358,14 +358,14 @@ void DisplaySuperAmy_Upgrade(EntityData1* data1, SonicCharObj2* sco2) {
 		{
 			NJS_VECTOR FRPos = { FlameRingMDL->child->pos[0], FlameRingMDL->child->pos[1], FlameRingMDL->child->pos[2] };
 			memcpy(CURRENT_MATRIX, &Amy_LeftHandMatrix, 0x30u);
-			DrawChunkModel(FlameRingMDL->getchunkmodel());// Display FlameRing Model on Sonic
+			DrawChunkModel(FlameRingMDL->getchunkmodel());// Display FlameRing Model on Amy
 			signed int v30 = dword_25F02D8;
 			signed int v31 = *(DWORD*)&sco2->field_36A[6];
 			dword_1DEB6A4 = dword_25F02D8;
 
 			SetMaterial(1, njCos(v31) * -1.0, 0, 0);
 			njTranslateEx(&FRPos);
-			DrawChunkModel(FlameRingMDL->child->getchunkmodel());// Display FlameRing animation on Sonic
+			DrawChunkModel(FlameRingMDL->child->getchunkmodel());// Display FlameRing animation on Amy
 			ResetMaterial();
 			dword_25F02D8 = dword_1DEB6A4;
 			sub_426420(8, 0);

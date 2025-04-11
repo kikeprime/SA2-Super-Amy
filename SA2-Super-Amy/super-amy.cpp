@@ -382,7 +382,7 @@ void LoadAmy_r(int playerNum) {
 
 	if (MainCharObj1[playerNum] && MainCharObj1[playerNum]->field_2 != 3)
 	{
-		SuperAmyMdl = LoadMDLFile((char*)"SONICMDL.PRS");
+		SuperAmyMdl = LoadMDLFile((char*)"AMYUPGMDL.PRS");
 		LoadSuperAmyManager(playerNum);
 		LoadSSEff_Textures();
 		LoadSAmyEff_Textures();
